@@ -1,0 +1,20 @@
+{
+  "name": "pzn-automation-testing",
+  "version": "1.0.0",
+  "description": "Testing the content changes on s.com",
+  "scripts": {
+    "test": "cross-env CONFIG_FILE=common SPECFILE=$npm_config_specfile npm run mochaTest",
+    "mochaTest": "cross-env-shell ./node_modules/.bin/mocha $SPECFILE ./conf/common.conf.js"
+  },
+  "author": "Bharath Sampath Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.11.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

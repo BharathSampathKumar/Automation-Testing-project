@@ -1,0 +1,7 @@
+node_modules
+Test Results
+package-lock.json
+docs
+specs
+.vscode/launch.json
+.env
